@@ -19,6 +19,8 @@ The data for this lab was taken from @bainbridge2020. The paper can be accessed 
 
 If you're curious, you can explore all their raw data by going to the repository associated with the paper, [here](https://github.com/themusiclab/infant-relax/)).
 
+## Column information
+
 There are seven variables in the data and each variable is described below. The first six rows of the data frame are also displayed below.
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -77,7 +79,7 @@ There are seven variables in the data and each variable is described below. The 
 
 6.  Plot a histogram of `hr_round`. Be sure to add appropriate labels and a title to your plot. What distribution would you say this looks like?
 
-7.  The histogram generated from the `bb2021` data for the `hr_round` variable appears to be normal distributed. Let's perform bootstrapping on this dataset 10,000 times and examine the resulting histogram.
+7.  The histogram generated from the `bb2021` data for the `hr_round` variable looks normal. Let's perform bootstrapping on this dataset 10,000 times and examine the resulting histogram.
 
     Firstly, extract only the `hr_round` variable from the `bb2021` data. Following this, use the `rep_sample_n` function from the `moderndive` package (ensure it is installed) to bootstrap the dataset. If you are unfamiliar with this function, it allows for easy bootstrapping without the need to write loops. Set the function to randomly sample 100 rows (size = 100) and repeat this process 10,000 times (reps=10000). This will result in a large data frame.
 
@@ -99,10 +101,10 @@ There are seven variables in the data and each variable is described below. The 
 10. Use `participant_means` to create a violin plot showing the distribution of heart rates in the lullaby and non-lullaby conditions. Your plot should be a simplified version of Figure 2a in the paper with (a) two violins, (b) each violin a different color, and (c) points showing the underlying data. Get rid of the legend.
 
     ::: callout-tip
-    The order that you add geoms to your plot matters here. It did not matter for simple class experiment.
+    The order that you add geoms to your plot matters here. It did not matter for simple class experiment but it does here.
     :::
 
-11. Pick a new theme for your figure. Also, add two different colors to it.
+11. Pick a new theme for the figure your created in question 10. Change the default colors.
 
 12. Now make a rain cloud plot of the figure. Look at vignette here for an idea how to create them using `geom_rain`: https://www.njudd.com/raincloud-ggrain/
 
@@ -117,3 +119,5 @@ There are seven variables in the data and each variable is described below. The 
     ![](ggplot_fig.png)
 
 15. Make a beautiful, clear plot that answers a question you might be interested in from the paper. *Make sure to include a descriptive title and it is publication ready.*
+
+16. Combine the plots from 14 and 15 together.
