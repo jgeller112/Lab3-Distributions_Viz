@@ -11,17 +11,18 @@ html:
     code-tools: true
 ---
 
-## Lab 3
+# Lab 3
 
-The data for this lab was taken from @bainbridge2020. The paper can be accessed here:
+The data for this lab were taken from @bainbridge2020. The paper can be accessed [here](https://www.nature.com/articles/s41562-020-00963-z.epdf?sharing_token=jMnyW68w1ly_jP-7uAQkSNRgN0jAjWel9jnR3ZoTv0MCXZ4r7jrUALP4MF0GLxgMsZKEaFOrpxew-I7taYTt0yYa41WX3rCZIACffMyBDz-5K7wJceE9lopzU0bffcHEIKaH5l_LxD5aPdg99A8STR1rqgOzBjKjgcxkg6zsKeA%3D). If you’re curious, you can explore all their raw data by going to the repository associated with the paper [here](<insert link>).
 
-<https://www.nature.com/articles/s41562-020-00963-z.epdf?sharing_token=jMnyW68w1ly_jP-7uAQkSNRgN0jAjWel9jnR3ZoTv0MCXZ4r7jrUALP4MF0GLxgMsZKEaFOrpxew-I7taYTt0yYa41WX3rCZIACffMyBDz-5K7wJceE9lopzU0bffcHEIKaH5l_LxD5aPdg99A8STR1rqgOzBjKjgcxkg6zsKeA%3D>
+### Column Information
 
-If you're curious, you can explore all their raw data by going to the repository associated with the paper, [here](https://github.com/themusiclab/infant-relax/)).
+There are seven variables in the data, each described below. 
+
 
 ## Column information
 
-There are seven variables in the data and each variable is described below. The first six rows of the data frame are also displayed below.
+There are seven variables in the data and each variable is described below. 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Data Columns                                                                                                                                                                                                                                                                            |
@@ -77,7 +78,7 @@ There are seven variables in the data and each variable is described below. The 
 
 5.  Next, let's examine the dependent variable, heart rate. Create a new variable called `hr_round` that is the heart rate value rounded to the nearest hundredth (use the function `round()`).
 
-6.  Plot a histogram of `hr_round`. Be sure to add appropriate labels and a title to your plot. What distribution would you say this looks like?
+6.  Plot a histogram of `hr_round`. Add appropriate labels and a title to your plot. What distribution would you say this looks like?
 
 7.  The histogram generated from the `bb2021` data for the `hr_round` variable looks normal. Let's perform bootstrapping on this dataset 10,000 times and examine the resulting histogram.
 
